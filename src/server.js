@@ -35,7 +35,7 @@ const server = http.createServer(app); //set server
 function main() {
     server.listen(PORT, 'localhost'); // set port, listen for requests
     server.on('listening', function() {
-        loggerLib.success('express', 'runing express server on ' + PORT);
+        loggerLib.success('express', 'running express server on ' + PORT);
     });
     //server.on('upgrade', (request, socket, head) => {
     //    wsServer.handleUpgrade(request, socket, head, socket => {
@@ -46,5 +46,6 @@ function main() {
 }
 
 module.exports = {
-    main: main
+    main: main,
+    server: server
 }
