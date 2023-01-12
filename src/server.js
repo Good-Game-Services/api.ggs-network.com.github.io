@@ -21,7 +21,7 @@ const app = express(); //set webserver
 app.use(bodyParser.urlencoded({extended : true})); // parse requests of content-type - application/x-www-form-urlencoded
 app.use(bodyParser.json()); // parse requests of content-type - application/json
 
-app.use(cloudflare.restore({update_on_start:true})); //set cloudlfare reverse proxy middleware
+//app.use(cloudflare.restore({update_on_start:true})); //set cloudlfare reverse proxy middleware
 
 app.use((req, res, next) => {
     loggerLib.log('cloudflare-proxy', 'remote transfare to ip: ' + req.cf_ip)
