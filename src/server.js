@@ -5,9 +5,7 @@ const PORT = process.env.PORT || 3242;
 //require default
 const path = require('path');
 const bodyParser = require('body-parser');
-const cookieParser = require('cookie-parser');
 const sessions = require('express-session');
-const cors = require('cors');
 
 const express = require('express'); //require webserver
 //const cloudflare = require('cloudflare-express'); //require cloudlfare reverse proxy middleware
