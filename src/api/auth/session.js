@@ -6,7 +6,7 @@ const db = require('./../../lib/mysql'); //bind MySQL
 
 const jwt = require('jsonwebtoken');
 
-const config = require('../../config'); //bind config.json
+const config = require('./../../../config.json'); //bind config.json
 
 // POST /api/v1/auth/check-session
 router.post('/api/v1/auth/check-session', (req, res, next) => {
