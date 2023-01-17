@@ -28,6 +28,11 @@ app.use((req, res, next) => {
     next(); // this will invoke next middleware function
 });
 
+//web routes
+app.use(require('./api/auth/login'));
+app.use(require('./api/auth/register'));
+app.use(require('./api/auth/session'));
+
 const http = require('http'); //set dedicated server
 const server = http.createServer(app); //set server
 
